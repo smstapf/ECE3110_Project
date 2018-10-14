@@ -1,20 +1,35 @@
 #include <iostream>
 #include <string.h>
 #include <fstream>
+#include <stdlib.h>
 
 using namespace std;
-#define LENGTH 1280*720
-int main(int argc, char** argv){
-	
-	FILE *camera, *grab;
-	camera = fopen("/dev/video1", "rb");
-	grab = fopen("grab.raw", "wb");
-	float data[LENGTH];
+#define LENGTH 10
 
-	fread(data, sizeof(data[0]), LENGTH, camera);
-	fwrite(data, sizeof(data[0]), LENGTH, grab);
-	fclose(camera);
-	fclose(grab);
+
+int main(int argc, char** argv){
+
+	ifstream camera;
+	camera.open("/dev/video1", ios::in);
+	if(!camera.is_open()){
+		cout<<"Failed to open /dev/video0"<<endl;
+	}
+
+	ofstream grab;
+	grab.open("grab.raw", ios::out);
+	if(!grab.is_open()){
+		cout<<"Failed to open grab.raw"<<endl;
+	}
+
+	char data[LENGTH];
+
+	while(1){
+		camera.getline(data, LENGTH);
+		cout<<data<<endl;
+	}
+
+	camera.close();
+	grab.close();
 
 	return(0);
 }
