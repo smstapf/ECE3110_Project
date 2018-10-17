@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named save_image
+
+# Build rule for target.
+save_image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 save_image
+.PHONY : save_image
+
+# fast build rule for target.
+save_image/fast:
+	$(MAKE) -f CMakeFiles/save_image.dir/build.make CMakeFiles/save_image.dir/build
+.PHONY : save_image/fast
+
+#=============================================================================
 # Target rules for targets named opencv_example
 
 # Build rule for target.
@@ -190,6 +203,33 @@ opencv_example.cpp.s:
 	$(MAKE) -f CMakeFiles/opencv_example.dir/build.make CMakeFiles/opencv_example.dir/opencv_example.cpp.s
 .PHONY : opencv_example.cpp.s
 
+saveImage.o: saveImage.cpp.o
+
+.PHONY : saveImage.o
+
+# target to build an object file
+saveImage.cpp.o:
+	$(MAKE) -f CMakeFiles/save_image.dir/build.make CMakeFiles/save_image.dir/saveImage.cpp.o
+.PHONY : saveImage.cpp.o
+
+saveImage.i: saveImage.cpp.i
+
+.PHONY : saveImage.i
+
+# target to preprocess a source file
+saveImage.cpp.i:
+	$(MAKE) -f CMakeFiles/save_image.dir/build.make CMakeFiles/save_image.dir/saveImage.cpp.i
+.PHONY : saveImage.cpp.i
+
+saveImage.s: saveImage.cpp.s
+
+.PHONY : saveImage.s
+
+# target to generate assembly for a file
+saveImage.cpp.s:
+	$(MAKE) -f CMakeFiles/save_image.dir/build.make CMakeFiles/save_image.dir/saveImage.cpp.s
+.PHONY : saveImage.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +238,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... save_image"
 	@echo "... opencv_example"
 	@echo "... capture_rate"
 	@echo "... captureRate.o"
@@ -206,6 +247,9 @@ help:
 	@echo "... opencv_example.o"
 	@echo "... opencv_example.i"
 	@echo "... opencv_example.s"
+	@echo "... saveImage.o"
+	@echo "... saveImage.i"
+	@echo "... saveImage.s"
 .PHONY : help
 
 

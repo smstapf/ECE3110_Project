@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/marshall/Documents/ECE3110_Project
 CMAKE_BINARY_DIR = /home/marshall/Documents/ECE3110_Project
 
 #=============================================================================
+# Target rules for target CMakeFiles/save_image.dir
+
+# All Build rule for target.
+CMakeFiles/save_image.dir/all:
+	$(MAKE) -f CMakeFiles/save_image.dir/build.make CMakeFiles/save_image.dir/depend
+	$(MAKE) -f CMakeFiles/save_image.dir/build.make CMakeFiles/save_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/marshall/Documents/ECE3110_Project/CMakeFiles --progress-num=5,6 "Built target save_image"
+.PHONY : CMakeFiles/save_image.dir/all
+
+# Include target in all.
+all: CMakeFiles/save_image.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/save_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marshall/Documents/ECE3110_Project/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/save_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marshall/Documents/ECE3110_Project/CMakeFiles 0
+.PHONY : CMakeFiles/save_image.dir/rule
+
+# Convenience name for target.
+save_image: CMakeFiles/save_image.dir/rule
+
+.PHONY : save_image
+
+# clean rule for target.
+CMakeFiles/save_image.dir/clean:
+	$(MAKE) -f CMakeFiles/save_image.dir/build.make CMakeFiles/save_image.dir/clean
+.PHONY : CMakeFiles/save_image.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/save_image.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/opencv_example.dir
 
 # All Build rule for target.

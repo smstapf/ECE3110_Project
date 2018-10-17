@@ -6,15 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/marshall/Documents/ECE3110_Project/captureRate.cpp
+/home/marshall/Documents/ECE3110_Project/saveImage.cpp
 opencv2/opencv.hpp
 /home/marshall/Documents/ECE3110_Project/opencv2/opencv.hpp
-sys/resource.h
--
-sys/types.h
--
-unistd.h
--
 
 /home/marshall/opencv/build/cv_cpu_config.h
 

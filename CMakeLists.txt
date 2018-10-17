@@ -29,3 +29,7 @@ target_link_libraries(opencv_example ${OpenCV_LIBS})
 
 add_executable(capture_rate captureRate.cpp)
 target_link_libraries(capture_rate ${OpenCV_LIBS})
+
+add_executable(save_image saveImage.cpp)
+target_link_libraries(save_image ${OpenCV_LIBS})
+
