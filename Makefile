@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named edge_detection
+
+# Build rule for target.
+edge_detection: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 edge_detection
+.PHONY : edge_detection
+
+# fast build rule for target.
+edge_detection/fast:
+	$(MAKE) -f CMakeFiles/edge_detection.dir/build.make CMakeFiles/edge_detection.dir/build
+.PHONY : edge_detection/fast
+
+#=============================================================================
 # Target rules for targets named save_image
 
 # Build rule for target.
@@ -176,6 +189,33 @@ captureRate.cpp.s:
 	$(MAKE) -f CMakeFiles/capture_rate.dir/build.make CMakeFiles/capture_rate.dir/captureRate.cpp.s
 .PHONY : captureRate.cpp.s
 
+edgeDetection.o: edgeDetection.cpp.o
+
+.PHONY : edgeDetection.o
+
+# target to build an object file
+edgeDetection.cpp.o:
+	$(MAKE) -f CMakeFiles/edge_detection.dir/build.make CMakeFiles/edge_detection.dir/edgeDetection.cpp.o
+.PHONY : edgeDetection.cpp.o
+
+edgeDetection.i: edgeDetection.cpp.i
+
+.PHONY : edgeDetection.i
+
+# target to preprocess a source file
+edgeDetection.cpp.i:
+	$(MAKE) -f CMakeFiles/edge_detection.dir/build.make CMakeFiles/edge_detection.dir/edgeDetection.cpp.i
+.PHONY : edgeDetection.cpp.i
+
+edgeDetection.s: edgeDetection.cpp.s
+
+.PHONY : edgeDetection.s
+
+# target to generate assembly for a file
+edgeDetection.cpp.s:
+	$(MAKE) -f CMakeFiles/edge_detection.dir/build.make CMakeFiles/edge_detection.dir/edgeDetection.cpp.s
+.PHONY : edgeDetection.cpp.s
+
 opencv_example.o: opencv_example.cpp.o
 
 .PHONY : opencv_example.o
@@ -238,12 +278,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... edge_detection"
 	@echo "... save_image"
 	@echo "... opencv_example"
 	@echo "... capture_rate"
 	@echo "... captureRate.o"
 	@echo "... captureRate.i"
 	@echo "... captureRate.s"
+	@echo "... edgeDetection.o"
+	@echo "... edgeDetection.i"
+	@echo "... edgeDetection.s"
 	@echo "... opencv_example.o"
 	@echo "... opencv_example.i"
 	@echo "... opencv_example.s"

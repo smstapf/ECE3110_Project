@@ -32,4 +32,5 @@ target_link_libraries(capture_rate ${OpenCV_LIBS})
 
 add_executable(save_image saveImage.cpp)
 target_link_libraries(save_image ${OpenCV_LIBS})
-
+add_executable(edge_detection edgeDetection.cpp)
+target_link_libraries(edge_detection ${OpenCV_LIBS})
