@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../LibProject/inc/accelerometer.h
+
+/home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp
+iostream
+-
+accelerometer.h
+/home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.h
+
