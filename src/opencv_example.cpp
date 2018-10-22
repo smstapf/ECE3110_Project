@@ -20,6 +20,7 @@ int main(int argc, char** argv)
         imshow("edges", edges);
         if(waitKey(30) >= 0) break;
     }
+    std::cout<<"test"<<std::endl;
     // the camera will be deinitialized automatically in VideoCapture destructor
     return 0;
 }
