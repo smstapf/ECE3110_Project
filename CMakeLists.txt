@@ -1,2 +1,2 @@
 project(ECE3110)
-subdirs(MainProject)
+subdirs(MainProject LibProject)

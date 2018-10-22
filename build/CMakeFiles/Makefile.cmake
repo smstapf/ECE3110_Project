@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../LibProject/CMakeLists.txt"
+  "../LibProject/src/CMakeLists.txt"
   "../MainProject/CMakeLists.txt"
   "../MainProject/src/CMakeLists.txt"
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
@@ -46,7 +48,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "MainProject/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "LibProject/CMakeFiles/CMakeDirectoryInformation.cmake"
   "MainProject/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "LibProject/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -55,4 +59,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "MainProject/src/CMakeFiles/save_image.dir/DependInfo.cmake"
   "MainProject/src/CMakeFiles/opencv_example.dir/DependInfo.cmake"
   "MainProject/src/CMakeFiles/capture_rate.dir/DependInfo.cmake"
+  "LibProject/src/CMakeFiles/LibProject.dir/DependInfo.cmake"
   )

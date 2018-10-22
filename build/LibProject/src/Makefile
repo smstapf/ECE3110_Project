@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marshall/Documents/ECE3110_Project/build/CMakeFiles /home/marshall/Documents/ECE3110_Project/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/marshall/Documents/ECE3110_Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/marshall/Documents/ECE3110_Project/build/CMakeFiles /home/marshall/Documents/ECE3110_Project/build/LibProject/src/CMakeFiles/progress.marks
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 LibProject/src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/marshall/Documents/ECE3110_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 LibProject/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,83 +97,48 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 LibProject/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 LibProject/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/marshall/Documents/ECE3110_Project/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named edge_detection
+# Convenience name for target.
+LibProject/src/CMakeFiles/LibProject.dir/rule:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 LibProject/src/CMakeFiles/LibProject.dir/rule
+.PHONY : LibProject/src/CMakeFiles/LibProject.dir/rule
 
-# Build rule for target.
-edge_detection: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 edge_detection
-.PHONY : edge_detection
+# Convenience name for target.
+LibProject: LibProject/src/CMakeFiles/LibProject.dir/rule
 
-# fast build rule for target.
-edge_detection/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/edge_detection.dir/build.make MainProject/src/CMakeFiles/edge_detection.dir/build
-.PHONY : edge_detection/fast
-
-#=============================================================================
-# Target rules for targets named save_image
-
-# Build rule for target.
-save_image: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 save_image
-.PHONY : save_image
-
-# fast build rule for target.
-save_image/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/save_image.dir/build.make MainProject/src/CMakeFiles/save_image.dir/build
-.PHONY : save_image/fast
-
-#=============================================================================
-# Target rules for targets named opencv_example
-
-# Build rule for target.
-opencv_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_example
-.PHONY : opencv_example
-
-# fast build rule for target.
-opencv_example/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/opencv_example.dir/build.make MainProject/src/CMakeFiles/opencv_example.dir/build
-.PHONY : opencv_example/fast
-
-#=============================================================================
-# Target rules for targets named capture_rate
-
-# Build rule for target.
-capture_rate: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 capture_rate
-.PHONY : capture_rate
-
-# fast build rule for target.
-capture_rate/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/capture_rate.dir/build.make MainProject/src/CMakeFiles/capture_rate.dir/build
-.PHONY : capture_rate/fast
-
-#=============================================================================
-# Target rules for targets named LibProject
-
-# Build rule for target.
-LibProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LibProject
 .PHONY : LibProject
 
 # fast build rule for target.
 LibProject/fast:
-	$(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/build
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/build
 .PHONY : LibProject/fast
+
+# target to build an object file
+accelerometer.o:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o
+.PHONY : accelerometer.o
+
+# target to preprocess a source file
+accelerometer.i:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.i
+.PHONY : accelerometer.i
+
+# target to generate assembly for a file
+accelerometer.s:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.s
+.PHONY : accelerometer.s
 
 # Help Target
 help:
@@ -182,12 +147,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... edge_detection"
-	@echo "... save_image"
-	@echo "... opencv_example"
-	@echo "... capture_rate"
 	@echo "... LibProject"
+	@echo "... edit_cache"
+	@echo "... accelerometer.o"
+	@echo "... accelerometer.i"
+	@echo "... accelerometer.s"
 .PHONY : help
 
 
@@ -199,6 +163,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/marshall/Documents/ECE3110_Project/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
