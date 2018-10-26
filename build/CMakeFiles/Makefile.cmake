@@ -55,9 +55,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "MainProject/src/CMakeFiles/edge_detection.dir/DependInfo.cmake"
-  "MainProject/src/CMakeFiles/save_image.dir/DependInfo.cmake"
-  "MainProject/src/CMakeFiles/opencv_example.dir/DependInfo.cmake"
   "MainProject/src/CMakeFiles/capture_rate.dir/DependInfo.cmake"
+  "MainProject/src/CMakeFiles/opencv_example.dir/DependInfo.cmake"
+  "MainProject/src/CMakeFiles/save_image.dir/DependInfo.cmake"
+  "MainProject/src/CMakeFiles/edge_detection.dir/DependInfo.cmake"
+  "MainProject/src/CMakeFiles/main.dir/DependInfo.cmake"
   "LibProject/src/CMakeFiles/LibProject.dir/DependInfo.cmake"
   )

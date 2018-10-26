@@ -1,2 +1,2 @@
-/usr/bin/ar qc libLibProject.a  CMakeFiles/LibProject.dir/accelerometer.o
+/usr/bin/ar qc libLibProject.a  CMakeFiles/LibProject.dir/accelerometer.o CMakeFiles/LibProject.dir/motor.o
 /usr/bin/ranlib libLibProject.a

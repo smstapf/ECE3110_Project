@@ -60,15 +60,15 @@ include MainProject/src/CMakeFiles/capture_rate.dir/flags.make
 MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.o: MainProject/src/CMakeFiles/capture_rate.dir/flags.make
 MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.o: ../MainProject/src/captureRate.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.o"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/capture_rate.dir/captureRate.cpp.o -c /home/marshall/Documents/ECE3110_Project/MainProject/src/captureRate.cpp
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/capture_rate.dir/captureRate.cpp.o -c /home/marshall/Documents/ECE3110_Project/MainProject/src/captureRate.cpp
 
 MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/capture_rate.dir/captureRate.cpp.i"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/MainProject/src/captureRate.cpp > CMakeFiles/capture_rate.dir/captureRate.cpp.i
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/MainProject/src/captureRate.cpp > CMakeFiles/capture_rate.dir/captureRate.cpp.i
 
 MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/capture_rate.dir/captureRate.cpp.s"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/MainProject/src/captureRate.cpp -o CMakeFiles/capture_rate.dir/captureRate.cpp.s
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/MainProject/src/captureRate.cpp -o CMakeFiles/capture_rate.dir/captureRate.cpp.s
 
 MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.o.requires:
 

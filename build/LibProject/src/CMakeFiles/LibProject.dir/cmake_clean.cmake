@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LibProject.dir/accelerometer.o"
+  "CMakeFiles/LibProject.dir/motor.o"
   "libLibProject.pdb"
   "libLibProject.a"
 )

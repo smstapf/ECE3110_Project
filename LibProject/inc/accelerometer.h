@@ -1,9 +1,0 @@
-/*
- *
- * Header File
- *
- */
-
-class accelerometer{
-
-};
