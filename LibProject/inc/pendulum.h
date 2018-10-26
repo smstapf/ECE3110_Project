@@ -10,7 +10,11 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <string.h>
+#include "opencv2/opencv.hpp"
 
+using namespace cv;
+using namespace std;
 
 class Accelerometer{
 
@@ -27,6 +31,24 @@ class Motor{
     Motor();
     ~Motor();
 
+};
+
+class Camera{
+    private:
+        VideoCapture cap;
+        Mat frame;
+    public:
+    Camera();
+    ~Camera();
+
+    Mat getImage();
+
+    void captureImage();
+    void saveImage(string fileName);
+    void displayImage();
+    void streamImage();
+
+    
 };
 
 #endif

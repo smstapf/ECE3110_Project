@@ -125,35 +125,86 @@ LibProject/fast:
 	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/build
 .PHONY : LibProject/fast
 
-# target to build an object file
-accelerometer.o:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o
+accelerometer.o: accelerometer.cpp.o
+
 .PHONY : accelerometer.o
 
-# target to preprocess a source file
-accelerometer.i:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.i
+# target to build an object file
+accelerometer.cpp.o:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o
+.PHONY : accelerometer.cpp.o
+
+accelerometer.i: accelerometer.cpp.i
+
 .PHONY : accelerometer.i
 
-# target to generate assembly for a file
-accelerometer.s:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.s
+# target to preprocess a source file
+accelerometer.cpp.i:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.i
+.PHONY : accelerometer.cpp.i
+
+accelerometer.s: accelerometer.cpp.s
+
 .PHONY : accelerometer.s
 
+# target to generate assembly for a file
+accelerometer.cpp.s:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.s
+.PHONY : accelerometer.cpp.s
+
+camera.o: camera.cpp.o
+
+.PHONY : camera.o
+
 # target to build an object file
-motor.o:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.o
-.PHONY : motor.o
+camera.cpp.o:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o
+.PHONY : camera.cpp.o
+
+camera.i: camera.cpp.i
+
+.PHONY : camera.i
 
 # target to preprocess a source file
-motor.i:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.i
-.PHONY : motor.i
+camera.cpp.i:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.i
+.PHONY : camera.cpp.i
+
+camera.s: camera.cpp.s
+
+.PHONY : camera.s
 
 # target to generate assembly for a file
-motor.s:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.s
+camera.cpp.s:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.s
+.PHONY : camera.cpp.s
+
+motor.o: motor.cpp.o
+
+.PHONY : motor.o
+
+# target to build an object file
+motor.cpp.o:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o
+.PHONY : motor.cpp.o
+
+motor.i: motor.cpp.i
+
+.PHONY : motor.i
+
+# target to preprocess a source file
+motor.cpp.i:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.i
+.PHONY : motor.cpp.i
+
+motor.s: motor.cpp.s
+
 .PHONY : motor.s
+
+# target to generate assembly for a file
+motor.cpp.s:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.s
+.PHONY : motor.cpp.s
 
 # Help Target
 help:
@@ -167,6 +218,9 @@ help:
 	@echo "... accelerometer.o"
 	@echo "... accelerometer.i"
 	@echo "... accelerometer.s"
+	@echo "... camera.o"
+	@echo "... camera.i"
+	@echo "... camera.s"
 	@echo "... motor.o"
 	@echo "... motor.i"
 	@echo "... motor.s"

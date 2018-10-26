@@ -57,67 +57,93 @@ include LibProject/src/CMakeFiles/LibProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include LibProject/src/CMakeFiles/LibProject.dir/flags.make
 
-LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o: LibProject/src/CMakeFiles/LibProject.dir/flags.make
-LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o: ../LibProject/src/accelerometer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o"
-	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LibProject.dir/accelerometer.o -c /home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp
+LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o: LibProject/src/CMakeFiles/LibProject.dir/flags.make
+LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o: ../LibProject/src/accelerometer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LibProject.dir/accelerometer.cpp.o -c /home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp
 
-LibProject/src/CMakeFiles/LibProject.dir/accelerometer.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibProject.dir/accelerometer.i"
-	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp > CMakeFiles/LibProject.dir/accelerometer.i
+LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibProject.dir/accelerometer.cpp.i"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp > CMakeFiles/LibProject.dir/accelerometer.cpp.i
 
-LibProject/src/CMakeFiles/LibProject.dir/accelerometer.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibProject.dir/accelerometer.s"
-	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp -o CMakeFiles/LibProject.dir/accelerometer.s
+LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibProject.dir/accelerometer.cpp.s"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp -o CMakeFiles/LibProject.dir/accelerometer.cpp.s
 
-LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.requires:
+LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.requires:
 
-.PHONY : LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.requires
+.PHONY : LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.requires
 
-LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.provides: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.requires
-	$(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.provides.build
-.PHONY : LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.provides
+LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.provides: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.requires
+	$(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.provides.build
+.PHONY : LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.provides
 
-LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.provides.build: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o
+LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.provides.build: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o
 
 
-LibProject/src/CMakeFiles/LibProject.dir/motor.o: LibProject/src/CMakeFiles/LibProject.dir/flags.make
-LibProject/src/CMakeFiles/LibProject.dir/motor.o: ../LibProject/src/motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object LibProject/src/CMakeFiles/LibProject.dir/motor.o"
-	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LibProject.dir/motor.o -c /home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp
+LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o: LibProject/src/CMakeFiles/LibProject.dir/flags.make
+LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o: ../LibProject/src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LibProject.dir/camera.cpp.o -c /home/marshall/Documents/ECE3110_Project/LibProject/src/camera.cpp
 
-LibProject/src/CMakeFiles/LibProject.dir/motor.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibProject.dir/motor.i"
-	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp > CMakeFiles/LibProject.dir/motor.i
+LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibProject.dir/camera.cpp.i"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/LibProject/src/camera.cpp > CMakeFiles/LibProject.dir/camera.cpp.i
 
-LibProject/src/CMakeFiles/LibProject.dir/motor.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibProject.dir/motor.s"
-	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp -o CMakeFiles/LibProject.dir/motor.s
+LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibProject.dir/camera.cpp.s"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/LibProject/src/camera.cpp -o CMakeFiles/LibProject.dir/camera.cpp.s
 
-LibProject/src/CMakeFiles/LibProject.dir/motor.o.requires:
+LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.requires:
 
-.PHONY : LibProject/src/CMakeFiles/LibProject.dir/motor.o.requires
+.PHONY : LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.requires
 
-LibProject/src/CMakeFiles/LibProject.dir/motor.o.provides: LibProject/src/CMakeFiles/LibProject.dir/motor.o.requires
-	$(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.o.provides.build
-.PHONY : LibProject/src/CMakeFiles/LibProject.dir/motor.o.provides
+LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.provides: LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.requires
+	$(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.provides.build
+.PHONY : LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.provides
 
-LibProject/src/CMakeFiles/LibProject.dir/motor.o.provides.build: LibProject/src/CMakeFiles/LibProject.dir/motor.o
+LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.provides.build: LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o
+
+
+LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o: LibProject/src/CMakeFiles/LibProject.dir/flags.make
+LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o: ../LibProject/src/motor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LibProject.dir/motor.cpp.o -c /home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp
+
+LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibProject.dir/motor.cpp.i"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp > CMakeFiles/LibProject.dir/motor.cpp.i
+
+LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibProject.dir/motor.cpp.s"
+	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp -o CMakeFiles/LibProject.dir/motor.cpp.s
+
+LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.requires:
+
+.PHONY : LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.requires
+
+LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.provides: LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.requires
+	$(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.provides.build
+.PHONY : LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.provides
+
+LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.provides.build: LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o
 
 
 # Object files for target LibProject
 LibProject_OBJECTS = \
-"CMakeFiles/LibProject.dir/accelerometer.o" \
-"CMakeFiles/LibProject.dir/motor.o"
+"CMakeFiles/LibProject.dir/accelerometer.cpp.o" \
+"CMakeFiles/LibProject.dir/camera.cpp.o" \
+"CMakeFiles/LibProject.dir/motor.cpp.o"
 
 # External object files for target LibProject
 LibProject_EXTERNAL_OBJECTS =
 
-LibProject/src/libLibProject.a: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o
-LibProject/src/libLibProject.a: LibProject/src/CMakeFiles/LibProject.dir/motor.o
+LibProject/src/libLibProject.a: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o
+LibProject/src/libLibProject.a: LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o
+LibProject/src/libLibProject.a: LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o
 LibProject/src/libLibProject.a: LibProject/src/CMakeFiles/LibProject.dir/build.make
 LibProject/src/libLibProject.a: LibProject/src/CMakeFiles/LibProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libLibProject.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libLibProject.a"
 	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && $(CMAKE_COMMAND) -P CMakeFiles/LibProject.dir/cmake_clean_target.cmake
 	cd /home/marshall/Documents/ECE3110_Project/build/LibProject/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LibProject.dir/link.txt --verbose=$(VERBOSE)
 
@@ -126,8 +152,9 @@ LibProject/src/CMakeFiles/LibProject.dir/build: LibProject/src/libLibProject.a
 
 .PHONY : LibProject/src/CMakeFiles/LibProject.dir/build
 
-LibProject/src/CMakeFiles/LibProject.dir/requires: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o.requires
-LibProject/src/CMakeFiles/LibProject.dir/requires: LibProject/src/CMakeFiles/LibProject.dir/motor.o.requires
+LibProject/src/CMakeFiles/LibProject.dir/requires: LibProject/src/CMakeFiles/LibProject.dir/accelerometer.cpp.o.requires
+LibProject/src/CMakeFiles/LibProject.dir/requires: LibProject/src/CMakeFiles/LibProject.dir/camera.cpp.o.requires
+LibProject/src/CMakeFiles/LibProject.dir/requires: LibProject/src/CMakeFiles/LibProject.dir/motor.cpp.o.requires
 
 .PHONY : LibProject/src/CMakeFiles/LibProject.dir/requires
 

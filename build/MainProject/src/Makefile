@@ -111,66 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-MainProject/src/CMakeFiles/capture_rate.dir/rule:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 MainProject/src/CMakeFiles/capture_rate.dir/rule
-.PHONY : MainProject/src/CMakeFiles/capture_rate.dir/rule
-
-# Convenience name for target.
-capture_rate: MainProject/src/CMakeFiles/capture_rate.dir/rule
-
-.PHONY : capture_rate
-
-# fast build rule for target.
-capture_rate/fast:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/capture_rate.dir/build.make MainProject/src/CMakeFiles/capture_rate.dir/build
-.PHONY : capture_rate/fast
-
-# Convenience name for target.
-MainProject/src/CMakeFiles/opencv_example.dir/rule:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 MainProject/src/CMakeFiles/opencv_example.dir/rule
-.PHONY : MainProject/src/CMakeFiles/opencv_example.dir/rule
-
-# Convenience name for target.
-opencv_example: MainProject/src/CMakeFiles/opencv_example.dir/rule
-
-.PHONY : opencv_example
-
-# fast build rule for target.
-opencv_example/fast:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/opencv_example.dir/build.make MainProject/src/CMakeFiles/opencv_example.dir/build
-.PHONY : opencv_example/fast
-
-# Convenience name for target.
-MainProject/src/CMakeFiles/save_image.dir/rule:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 MainProject/src/CMakeFiles/save_image.dir/rule
-.PHONY : MainProject/src/CMakeFiles/save_image.dir/rule
-
-# Convenience name for target.
-save_image: MainProject/src/CMakeFiles/save_image.dir/rule
-
-.PHONY : save_image
-
-# fast build rule for target.
-save_image/fast:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/save_image.dir/build.make MainProject/src/CMakeFiles/save_image.dir/build
-.PHONY : save_image/fast
-
-# Convenience name for target.
-MainProject/src/CMakeFiles/edge_detection.dir/rule:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 MainProject/src/CMakeFiles/edge_detection.dir/rule
-.PHONY : MainProject/src/CMakeFiles/edge_detection.dir/rule
-
-# Convenience name for target.
-edge_detection: MainProject/src/CMakeFiles/edge_detection.dir/rule
-
-.PHONY : edge_detection
-
-# fast build rule for target.
-edge_detection/fast:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/edge_detection.dir/build.make MainProject/src/CMakeFiles/edge_detection.dir/build
-.PHONY : edge_detection/fast
-
-# Convenience name for target.
 MainProject/src/CMakeFiles/main.dir/rule:
 	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f CMakeFiles/Makefile2 MainProject/src/CMakeFiles/main.dir/rule
 .PHONY : MainProject/src/CMakeFiles/main.dir/rule
@@ -184,60 +124,6 @@ main: MainProject/src/CMakeFiles/main.dir/rule
 main/fast:
 	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/main.dir/build.make MainProject/src/CMakeFiles/main.dir/build
 .PHONY : main/fast
-
-captureRate.o: captureRate.cpp.o
-
-.PHONY : captureRate.o
-
-# target to build an object file
-captureRate.cpp.o:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/capture_rate.dir/build.make MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.o
-.PHONY : captureRate.cpp.o
-
-captureRate.i: captureRate.cpp.i
-
-.PHONY : captureRate.i
-
-# target to preprocess a source file
-captureRate.cpp.i:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/capture_rate.dir/build.make MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.i
-.PHONY : captureRate.cpp.i
-
-captureRate.s: captureRate.cpp.s
-
-.PHONY : captureRate.s
-
-# target to generate assembly for a file
-captureRate.cpp.s:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/capture_rate.dir/build.make MainProject/src/CMakeFiles/capture_rate.dir/captureRate.cpp.s
-.PHONY : captureRate.cpp.s
-
-edgeDetection.o: edgeDetection.cpp.o
-
-.PHONY : edgeDetection.o
-
-# target to build an object file
-edgeDetection.cpp.o:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/edge_detection.dir/build.make MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.o
-.PHONY : edgeDetection.cpp.o
-
-edgeDetection.i: edgeDetection.cpp.i
-
-.PHONY : edgeDetection.i
-
-# target to preprocess a source file
-edgeDetection.cpp.i:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/edge_detection.dir/build.make MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.i
-.PHONY : edgeDetection.cpp.i
-
-edgeDetection.s: edgeDetection.cpp.s
-
-.PHONY : edgeDetection.s
-
-# target to generate assembly for a file
-edgeDetection.cpp.s:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/edge_detection.dir/build.make MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.s
-.PHONY : edgeDetection.cpp.s
 
 main.o: main.cpp.o
 
@@ -266,88 +152,18 @@ main.cpp.s:
 	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/main.dir/build.make MainProject/src/CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-opencv_example.o: opencv_example.cpp.o
-
-.PHONY : opencv_example.o
-
-# target to build an object file
-opencv_example.cpp.o:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/opencv_example.dir/build.make MainProject/src/CMakeFiles/opencv_example.dir/opencv_example.cpp.o
-.PHONY : opencv_example.cpp.o
-
-opencv_example.i: opencv_example.cpp.i
-
-.PHONY : opencv_example.i
-
-# target to preprocess a source file
-opencv_example.cpp.i:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/opencv_example.dir/build.make MainProject/src/CMakeFiles/opencv_example.dir/opencv_example.cpp.i
-.PHONY : opencv_example.cpp.i
-
-opencv_example.s: opencv_example.cpp.s
-
-.PHONY : opencv_example.s
-
-# target to generate assembly for a file
-opencv_example.cpp.s:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/opencv_example.dir/build.make MainProject/src/CMakeFiles/opencv_example.dir/opencv_example.cpp.s
-.PHONY : opencv_example.cpp.s
-
-saveImage.o: saveImage.cpp.o
-
-.PHONY : saveImage.o
-
-# target to build an object file
-saveImage.cpp.o:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/save_image.dir/build.make MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.o
-.PHONY : saveImage.cpp.o
-
-saveImage.i: saveImage.cpp.i
-
-.PHONY : saveImage.i
-
-# target to preprocess a source file
-saveImage.cpp.i:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/save_image.dir/build.make MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.i
-.PHONY : saveImage.cpp.i
-
-saveImage.s: saveImage.cpp.s
-
-.PHONY : saveImage.s
-
-# target to generate assembly for a file
-saveImage.cpp.s:
-	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f MainProject/src/CMakeFiles/save_image.dir/build.make MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.s
-.PHONY : saveImage.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... capture_rate"
 	@echo "... rebuild_cache"
-	@echo "... opencv_example"
-	@echo "... save_image"
-	@echo "... edge_detection"
 	@echo "... main"
 	@echo "... edit_cache"
-	@echo "... captureRate.o"
-	@echo "... captureRate.i"
-	@echo "... captureRate.s"
-	@echo "... edgeDetection.o"
-	@echo "... edgeDetection.i"
-	@echo "... edgeDetection.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... opencv_example.o"
-	@echo "... opencv_example.i"
-	@echo "... opencv_example.s"
-	@echo "... saveImage.o"
-	@echo "... saveImage.i"
-	@echo "... saveImage.s"
 .PHONY : help
 
 

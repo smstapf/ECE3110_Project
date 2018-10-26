@@ -111,58 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named capture_rate
-
-# Build rule for target.
-capture_rate: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 capture_rate
-.PHONY : capture_rate
-
-# fast build rule for target.
-capture_rate/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/capture_rate.dir/build.make MainProject/src/CMakeFiles/capture_rate.dir/build
-.PHONY : capture_rate/fast
-
-#=============================================================================
-# Target rules for targets named opencv_example
-
-# Build rule for target.
-opencv_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_example
-.PHONY : opencv_example
-
-# fast build rule for target.
-opencv_example/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/opencv_example.dir/build.make MainProject/src/CMakeFiles/opencv_example.dir/build
-.PHONY : opencv_example/fast
-
-#=============================================================================
-# Target rules for targets named save_image
-
-# Build rule for target.
-save_image: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 save_image
-.PHONY : save_image
-
-# fast build rule for target.
-save_image/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/save_image.dir/build.make MainProject/src/CMakeFiles/save_image.dir/build
-.PHONY : save_image/fast
-
-#=============================================================================
-# Target rules for targets named edge_detection
-
-# Build rule for target.
-edge_detection: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 edge_detection
-.PHONY : edge_detection
-
-# fast build rule for target.
-edge_detection/fast:
-	$(MAKE) -f MainProject/src/CMakeFiles/edge_detection.dir/build.make MainProject/src/CMakeFiles/edge_detection.dir/build
-.PHONY : edge_detection/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -196,10 +144,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... capture_rate"
-	@echo "... opencv_example"
-	@echo "... save_image"
-	@echo "... edge_detection"
 	@echo "... main"
 	@echo "... LibProject"
 .PHONY : help
