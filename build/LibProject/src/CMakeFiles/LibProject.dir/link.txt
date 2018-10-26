@@ -1,2 +1,0 @@
-/usr/bin/ar qc libLibProject.a  CMakeFiles/LibProject.dir/accelerometer.cpp.o CMakeFiles/LibProject.dir/camera.cpp.o CMakeFiles/LibProject.dir/motor.cpp.o
-/usr/bin/ranlib libLibProject.a
