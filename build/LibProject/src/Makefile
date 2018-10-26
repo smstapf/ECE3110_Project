@@ -140,6 +140,21 @@ accelerometer.s:
 	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/accelerometer.s
 .PHONY : accelerometer.s
 
+# target to build an object file
+motor.o:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.o
+.PHONY : motor.o
+
+# target to preprocess a source file
+motor.i:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.i
+.PHONY : motor.i
+
+# target to generate assembly for a file
+motor.s:
+	cd /home/marshall/Documents/ECE3110_Project/build && $(MAKE) -f LibProject/src/CMakeFiles/LibProject.dir/build.make LibProject/src/CMakeFiles/LibProject.dir/motor.s
+.PHONY : motor.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -152,6 +167,9 @@ help:
 	@echo "... accelerometer.o"
 	@echo "... accelerometer.i"
 	@echo "... accelerometer.s"
+	@echo "... motor.o"
+	@echo "... motor.i"
+	@echo "... motor.s"
 .PHONY : help
 
 

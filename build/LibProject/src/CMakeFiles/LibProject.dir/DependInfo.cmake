@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp" "/home/marshall/Documents/ECE3110_Project/build/LibProject/src/CMakeFiles/LibProject.dir/accelerometer.o"
+  "/home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp" "/home/marshall/Documents/ECE3110_Project/build/LibProject/src/CMakeFiles/LibProject.dir/motor.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -60,15 +60,15 @@ include MainProject/src/CMakeFiles/save_image.dir/flags.make
 MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.o: MainProject/src/CMakeFiles/save_image.dir/flags.make
 MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.o: ../MainProject/src/saveImage.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.o"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/save_image.dir/saveImage.cpp.o -c /home/marshall/Documents/ECE3110_Project/MainProject/src/saveImage.cpp
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/save_image.dir/saveImage.cpp.o -c /home/marshall/Documents/ECE3110_Project/MainProject/src/saveImage.cpp
 
 MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/save_image.dir/saveImage.cpp.i"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/MainProject/src/saveImage.cpp > CMakeFiles/save_image.dir/saveImage.cpp.i
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/MainProject/src/saveImage.cpp > CMakeFiles/save_image.dir/saveImage.cpp.i
 
 MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/save_image.dir/saveImage.cpp.s"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/MainProject/src/saveImage.cpp -o CMakeFiles/save_image.dir/saveImage.cpp.s
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/MainProject/src/saveImage.cpp -o CMakeFiles/save_image.dir/saveImage.cpp.s
 
 MainProject/src/CMakeFiles/save_image.dir/saveImage.cpp.o.requires:
 

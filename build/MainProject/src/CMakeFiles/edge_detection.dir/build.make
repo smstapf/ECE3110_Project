@@ -60,15 +60,15 @@ include MainProject/src/CMakeFiles/edge_detection.dir/flags.make
 MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.o: MainProject/src/CMakeFiles/edge_detection.dir/flags.make
 MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.o: ../MainProject/src/edgeDetection.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marshall/Documents/ECE3110_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.o"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/edge_detection.dir/edgeDetection.cpp.o -c /home/marshall/Documents/ECE3110_Project/MainProject/src/edgeDetection.cpp
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/edge_detection.dir/edgeDetection.cpp.o -c /home/marshall/Documents/ECE3110_Project/MainProject/src/edgeDetection.cpp
 
 MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/edge_detection.dir/edgeDetection.cpp.i"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/MainProject/src/edgeDetection.cpp > CMakeFiles/edge_detection.dir/edgeDetection.cpp.i
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marshall/Documents/ECE3110_Project/MainProject/src/edgeDetection.cpp > CMakeFiles/edge_detection.dir/edgeDetection.cpp.i
 
 MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/edge_detection.dir/edgeDetection.cpp.s"
-	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/MainProject/src/edgeDetection.cpp -o CMakeFiles/edge_detection.dir/edgeDetection.cpp.s
+	cd /home/marshall/Documents/ECE3110_Project/build/MainProject/src && /usr/bin/x86_64-linux-gnu-g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marshall/Documents/ECE3110_Project/MainProject/src/edgeDetection.cpp -o CMakeFiles/edge_detection.dir/edgeDetection.cpp.s
 
 MainProject/src/CMakeFiles/edge_detection.dir/edgeDetection.cpp.o.requires:
 

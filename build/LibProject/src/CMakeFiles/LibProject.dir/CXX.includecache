@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../LibProject/inc/accelerometer.h
-
-/home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp
+../LibProject/inc/pendulum.h
+stdio.h
+-
 iostream
 -
-accelerometer.h
-/home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.h
+
+/home/marshall/Documents/ECE3110_Project/LibProject/src/accelerometer.cpp
+pendulum.h
+/home/marshall/Documents/ECE3110_Project/LibProject/src/pendulum.h
+
+/home/marshall/Documents/ECE3110_Project/LibProject/src/motor.cpp
+pendulum.h
+/home/marshall/Documents/ECE3110_Project/LibProject/src/pendulum.h
 

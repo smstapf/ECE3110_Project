@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7    -rdynamic CMakeFiles/main.dir/main.cpp.o  -o main  -L/home/marshall/Documents/ECE3110_Project/LibProject/src -Wl,-rpath,/home/marshall/Documents/ECE3110_Project/LibProject/src ../../LibProject/src/libLibProject.a 

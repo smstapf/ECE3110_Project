@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../LibProject/inc/pendulum.h
+stdio.h
+-
+iostream
+-
+
+/home/marshall/Documents/ECE3110_Project/MainProject/src/main.cpp
+pendulum.h
+/home/marshall/Documents/ECE3110_Project/MainProject/src/pendulum.h
+
