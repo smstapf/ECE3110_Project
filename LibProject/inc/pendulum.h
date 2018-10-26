@@ -13,6 +13,9 @@
 #include <string.h>
 #include "opencv2/opencv.hpp"
 
+#define CLOCKWISE 0
+#define C_CLOCKWISE 1
+
 using namespace cv;
 using namespace std;
 

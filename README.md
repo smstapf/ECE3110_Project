@@ -3,7 +3,7 @@ Version control for the software portion of our ECE3110 Project - Self balancing
 
 
 ## Compiling
-mkdir build
-cd build
-cmake ..
-make
+mkdir build  
+cd build  
+cmake ..  
+make  
