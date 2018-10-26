@@ -33,6 +33,7 @@ void Camera::streamImage(){
         this->captureImage();
         this->displayImage();
         if(waitKey(30) >= 0){
+            this->cap.release();
             return;
         }
     }

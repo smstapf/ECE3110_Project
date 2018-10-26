@@ -17,6 +17,12 @@ using namespace cv;
 using namespace std;
 
 class Accelerometer{
+    private:
+
+    public:
+
+    Accelerometer();
+    ~Accelerometer();
 
 };
 
@@ -37,7 +43,9 @@ class Camera{
     private:
         VideoCapture cap;
         Mat frame;
+    
     public:
+
     Camera();
     ~Camera();
 
@@ -51,4 +59,10 @@ class Camera{
     
 };
 
+class ImageProcessor{
+    private:
+
+    public:
+
+};
 #endif
