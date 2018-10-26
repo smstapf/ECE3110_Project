@@ -30,12 +30,24 @@ class Accelerometer{
 
 class Motor{
     private:
-        
+        int pin1;
+        int pin2;
+        bool direction;
+        int pwm;
 
+        bool started;
     public:
 
     Motor();
     ~Motor();
+
+    void setPin1(int pin);
+    void setPin2(int pin);
+    void setDirection(bool direction);
+    void setPwm(int pwm);
+    void run();
+    void stop();
+
 
 };
 
