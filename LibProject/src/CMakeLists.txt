@@ -9,4 +9,4 @@ message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 include_directories(${ECE3110_SOURCE_DIR}/LibProject/inc)
-add_library(LibProject accelerometer.cpp camera.cpp motor.cpp)
+add_library(LibProject accelerometer.cpp camera.cpp motor.cpp imageprocessor.cpp)

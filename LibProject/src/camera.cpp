@@ -16,6 +16,10 @@ Camera::~Camera(){
     cout<<"Camera Destructor"<<endl;
 }
 
+Mat Camera::getImage(){
+    return(this->frame);
+}
+
 void Camera::captureImage(){
     this->cap >> this->frame;
 }

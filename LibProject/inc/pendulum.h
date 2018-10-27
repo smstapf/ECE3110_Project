@@ -75,9 +75,29 @@ class Camera{
 };
 
 class ImageProcessor{
-    private:
+    private:                                         
+        Mat inputFrame;
+        Mat outputFrame;
+        double lowThreshold;
+        double highThreshold;
+        int kernel;
 
     public:
+
+        ImageProcessor();
+        ~ImageProcessor();
+
+
+        void setLowThresh(double thresh);
+        void setHighThresh(double thresh);
+        void setKernel(int kernel);
+        
+        void loadImage(Mat frame);
+
+        Mat getProcessedImage();
+        
+        void toGray();
+        void canny();
 
 };
 #endif
