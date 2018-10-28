@@ -5,7 +5,7 @@ using namespace std;
 Camera::Camera(){
     cout<<"Camera Constructor"<<endl;
     //TODO add camera device number robustness
-    this->cap = VideoCapture(0);
+    this->cap = VideoCapture(1);
     if(!cap.isOpened()){
         cout<<"Failed to open camera"<<endl;
         exit(2);

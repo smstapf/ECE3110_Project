@@ -11,29 +11,26 @@ int main(int argc, char**  argv){
 
     //camera.streamImage();
     cout<<"test"<<endl;
-    
-    camera.captureImage();
-    ip.loadImage(camera.getImage());
-    ip.toGray();
-    
-
-    imshow("test", ip.getProcessedImage());
-
-    waitKey(0);
-    ip.setHighThresh(300);
-    ip.setLowThresh(200);
+    ip.setHighThresh(150);
+    ip.setLowThresh(100);
     ip.setKernel(3);
-    ip.canny();
 
-    imshow("test", ip.getProcessedImage());
+    //camera.streamImage();
+
     
-    waitKey();
-  //  Mat lines;
-    /*HoughLines(ip.getProcessedImage(), lines, 100, 3.14, 1);
-
-    imshow("test", lines);
-
-    waitKey(0);
-*/
+    while(1){
+        camera.captureImage();
+        ip.loadImage(camera.getImage());
+        //ip.toGray();
+        //imshow("test", ip.getProcessedImage());
+       // waitKey(0);
+        ip.toGray();
+        ip.cannyFilter();
+        ip.hTransform();
+        ip.drawLines();
+        if(waitKey(30) >= 0){
+            return(0);
+        }
+    }
     return(0);
 }

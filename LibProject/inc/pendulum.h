@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <string.h>
+#include <math.h>
 #include "opencv2/opencv.hpp"
 
 #define CLOCKWISE 0
@@ -77,10 +78,14 @@ class Camera{
 class ImageProcessor{
     private:                                         
         Mat inputFrame;
+        Mat gray;
+        Mat edges;
         Mat outputFrame;
+
         double lowThreshold;
         double highThreshold;
         int kernel;
+        vector<Vec2f> lines;
 
     public:
 
@@ -97,7 +102,10 @@ class ImageProcessor{
         Mat getProcessedImage();
         
         void toGray();
-        void canny();
+        void cannyFilter();
+        void hTransform();
+        void drawLines();
+        void streamHTransform();
 
 };
 #endif
