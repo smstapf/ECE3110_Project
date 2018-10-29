@@ -29,4 +29,4 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 #target_link_libraries(edge_detection ${OpenCV_LIBS})
 
 add_executable(main main.cpp)
-target_link_libraries(main LibProject ${OpenCV_LIBS})
+target_link_libraries(main LibProject ${OpenCV_LIBS} pthread)

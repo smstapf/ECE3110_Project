@@ -66,11 +66,15 @@ void ImageProcessor::drawLines(){
         pt2.y = cvRound(y0 - 1000*(a));
 
         line(dst, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
-        avgTheta += lines[i][1];
+        //avgTheta += lines[i][1];
     }
-    avgTheta /= lines.size();
-    cout<<"Average Theta : " <<avgTheta<<endl;
+   // avgTheta /= lines.size();
+    //cout<<"Average Theta : " <<avgTheta<<endl;
 
     imshow("hTransform", dst);
    // waitKey(0);
+}
+
+vector<Vec2f> ImageProcessor::getLines(){
+    return(this->lines);
 }

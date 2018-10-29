@@ -9,9 +9,12 @@
 #define PENDULUM_H_
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <iostream>
 #include <string.h>
 #include <math.h>
+#include <pthread.h>
+#include <thread>
 #include "opencv2/opencv.hpp"
 
 #define CLOCKWISE 0
@@ -100,12 +103,12 @@ class ImageProcessor{
         void loadImage(Mat frame);
 
         Mat getProcessedImage();
+        vector<Vec2f> getLines();
         
         void toGray();
         void cannyFilter();
         void hTransform();
         void drawLines();
-        void streamHTransform();
 
 };
 #endif
