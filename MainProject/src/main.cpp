@@ -40,17 +40,20 @@ void* cameraCaptureThread(void*){
 
 
     //Capture as fast as possible? maybe a timer
-
-    //Capture image
-    camera.captureImage();
-    //lock the mutex
-	pthread_mutex_lock(&frameMutex);
-    //add to the buffer
-    cout<<"test"<<endl;
-    frameBuffer.push_back(camera.getImage());
-    //unlock the mutex
-    pthread_mutex_unlock(&frameMutex);
-    camera.displayImage();
+    while(1){
+        //Capture image
+        camera.captureImage();
+        //lock the mutex
+        pthread_mutex_lock(&frameMutex);
+        cout<<"camera lock"<<endl;
+        //add to the buffer
+        //cout<<"test"<<endl;
+        frameBuffer.push_back(camera.getImage());
+        //unlock the mutex
+        pthread_mutex_unlock(&frameMutex);
+        cout<<"Camera unlock"<<endl;
+        camera.displayImage();
+    }
 }
 
 void* imageProcessingThread(void*){
@@ -64,29 +67,33 @@ void* imageProcessingThread(void*){
     vector<Vec2f> lines;
     double tempOrientation;
     //lock mutex
-    while(frameBuffer.size() <= 0){
+    while(1){
+        while(frameBuffer.size() <= 0){
+        }
+        pthread_mutex_lock(&frameMutex);
+        cout<<"IP lock"<<endl;
+        //grab image from shared buffer
+        image = frameBuffer[0];
+        frameBuffer.pop_back();
+        //unlock mutex
+        pthread_mutex_unlock(&frameMutex);
+        cout<<"IP unlock"<<endl;
+        //process
+        ip.loadImage(image);
+        ip.toGray();
+        ip.cannyFilter();
+        ip.hTransform();
+        lines = ip.getLines();
+        for(int i = 0; i < lines.size(); i++){
+            tempOrientation += lines[i][1];
+        }
+        tempOrientation /= lines.size();
+        //lock mutex
+        pthread_mutex_lock(&orientationMutex);
+        //write to orientation buffer
+        orientation = tempOrientation;
+        //unlock mutex
+        pthread_mutex_unlock(&orientationMutex);
+        cout<<"orientation: "<<orientation<<endl;
     }
-    pthread_mutex_lock(&frameMutex);
-    //grab image from shared buffer
-    image = frameBuffer[0];
-    frameBuffer.pop_back();
-    //unlock mutex
-    pthread_mutex_unlock(&frameMutex);
-    //process
-    ip.loadImage(image);
-    ip.toGray();
-    ip.cannyFilter();
-    ip.hTransform();
-    lines = ip.getLines();
-    for(int i = 0; i < lines.size(); i++){
-        tempOrientation += lines[i][1];
-    }
-    tempOrientation /= lines.size();
-    //lock mutex
-    pthread_mutex_lock(&orientationMutex);
-    //write to orientation buffer
-    orientation = tempOrientation;
-    //unlock mutex
-    pthread_mutex_unlock(&orientationMutex);
-    cout<<"orientation: "<<orientation<<endl;
 }

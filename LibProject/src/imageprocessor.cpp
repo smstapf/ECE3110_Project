@@ -27,7 +27,7 @@ void ImageProcessor::loadImage(Mat frame){
 }
 
 Mat ImageProcessor::getProcessedImage(){
-    return(this->outputFrame);
+    return(this->edges);
 }
 
 
