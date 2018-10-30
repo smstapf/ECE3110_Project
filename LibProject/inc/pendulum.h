@@ -15,6 +15,7 @@
 #include <math.h>
 #include <pthread.h>
 #include <thread>
+#include <semaphore.h>
 #include "opencv2/opencv.hpp"
 
 #define CLOCKWISE 0
