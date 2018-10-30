@@ -7,7 +7,8 @@
  */
 #ifndef PENDULUM_H_
 #define PENDULUM_H_
-
+#include "opencv2/core/core.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -17,7 +18,7 @@
 #include <thread>
 #include <semaphore.h>
 #include "opencv2/opencv.hpp"
-
+#include "opencv2/highgui/highgui.hpp"
 #define CLOCKWISE 0
 #define C_CLOCKWISE 1
 

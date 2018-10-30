@@ -49,7 +49,7 @@ void ImageProcessor::hTransform(){
 
 void ImageProcessor::drawLines(){
     Mat dst;
-    cvtColor(this->edges, dst, CV_GRAY2BGR);
+    cvtColor(this->edges, dst, COLOR_BGR2GRAY);
     double avgTheta;
     for(size_t i = 0; i < lines.size(); i++){
         float rho = lines[i][0];
@@ -65,7 +65,7 @@ void ImageProcessor::drawLines(){
         pt2.x = cvRound(x0 - 1000*(-b));
         pt2.y = cvRound(y0 - 1000*(a));
 
-        line(dst, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
+        line(dst, pt1, pt2, Scalar(0,0,255), 3, LINE_AA);
         //avgTheta += lines[i][1];
     }
    // avgTheta /= lines.size();

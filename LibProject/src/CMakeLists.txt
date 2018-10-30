@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-set(OpenCV_DIR /home/marshall/opencv/build/)
+set(OpenCV_DIR /home/pi/opencv/build/)
 
 find_package(OpenCV REQUIRED)
 message(STATUS "OpenCV library status:")
