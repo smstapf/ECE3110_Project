@@ -17,6 +17,12 @@
 #include <thread>
 #include <semaphore.h>
 #include "opencv2/opencv.hpp"
+#include <wiringPi.h>
+
+#define CONTROL1 1
+#define CONTROL2 4
+#define PWM1 5
+#define PWM2 6
 
 #define CLOCKWISE 0
 #define C_CLOCKWISE 1
@@ -38,12 +44,13 @@ class Accelerometer{
 
 class Motor{
     private:
-        int pin1;
-        int pin2;
+        int pwm1;
+        int control1;
+        int pwm2;
+        int control2;
         bool direction;
-        int pwm;
 
-        bool started;
+        bool start;
     public:
 
     Motor();
@@ -52,8 +59,10 @@ class Motor{
     void setPin1(int pin);
     void setPin2(int pin);
     void setDirection(bool direction);
-    void setPwm(int pwm);
+    void setPwm1(int pwm);
+    void setPwm2(int pwm);
     void run();
+    void start();
     void stop();
 
 
