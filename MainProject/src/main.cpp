@@ -51,13 +51,13 @@ void* cameraCaptureThread(void*){
         camera.captureImage();
         //lock the mutex
         pthread_mutex_lock(&frameMutex);
-        //cout<<"camera lock"<<endl;
+        cout<<"camera lock"<<endl;
         //add to the buffer
         //cout<<"test"<<endl;
         frameBuffer.push_back(camera.getImage());
         //unlock the mutex
         pthread_mutex_unlock(&frameMutex);
-        //cout<<"Camera unlock"<<endl;
+        cout<<"Camera unlock"<<endl;
         //camera.displayImage();
         //waitKey(0);
     }
@@ -78,20 +78,21 @@ void* imageProcessingThread(void*){
         vector<Vec2f> lines;
         double tempOrientation = 0;
         while(frameBuffer.size() <= 0){
-        }
+        	cout<<"Frame Buffer is empty"<<endl;
+	}
         pthread_mutex_lock(&frameMutex);
-        //cout<<"IP lock"<<endl;
+        cout<<"IP lock"<<endl;
         //grab image from shared buffer
         image = frameBuffer[0];
         frameBuffer.pop_back();
         //unlock mutex
         pthread_mutex_unlock(&frameMutex);
-        //cout<<"IP unlock"<<endl;
+        cout<<"IP unlock"<<endl;
         //process
         ip.loadImage(image);
         ip.toGray();
         ip.cannyFilter();
-        cvtColor(ip.getProcessedImage(), cdst, CV_GRAY2BGR);
+        cvtColor(ip.getProcessedImage(), cdst, COLOR_BGR2GRAY);
         ip.hTransform();
         lines = ip.getLines();
         for(int i = 0; i < lines.size(); i++){
@@ -106,7 +107,7 @@ void* imageProcessingThread(void*){
             pt1.y = cvRound(y0 + 1000*(a));
             pt2.x = cvRound(x0 - 1000*(-b));
             pt2.y = cvRound(y0 - 1000*(a));
-            line( cdst, pt1, pt2, Scalar(0,0,255), 3, CV_AA);
+            line( cdst, pt1, pt2, Scalar(0,0,255), 3, LINE_AA);
         }
         tempOrientation /= lines.size();
         //lock mutex
