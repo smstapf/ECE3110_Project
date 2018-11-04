@@ -7,7 +7,8 @@
  */
 #ifndef PENDULUM_H_
 #define PENDULUM_H_
-
+#include "opencv2/core/core.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
@@ -17,13 +18,14 @@
 #include <thread>
 #include <semaphore.h>
 #include "opencv2/opencv.hpp"
-//#include <wiringPi.h>
+#include "opencv2/highgui/highgui.hpp"
+#include <wiringPi.h>
+
 
 #define CONTROL1 1
 #define CONTROL2 4
 #define PWM1 5
 #define PWM2 6
-
 #define CLOCKWISE 0
 #define C_CLOCKWISE 1
 
