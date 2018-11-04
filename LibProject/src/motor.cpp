@@ -3,8 +3,8 @@
 Motor::Motor(){
     std::cout<<"Motor constructor"<<std::endl;
     //init wiring pi
-    wiringPiSetup();
-    usleep(10);
+   // wiringPiSetup();
+    /*usleep(10);
     //puppuds / io
     //From header definitions
     this->pwm1 = PWM1;
@@ -16,9 +16,9 @@ Motor::Motor(){
     pinMode(this->control2, OUTPUT);
     pinMode(this->pwm1, OUTPUT);
     pinMode(this->pwm2, OUTPUT);
-
+*/
     this->direction = CLOCKWISE; //arbiturary
-    this->started = false;
+    this->isStart = false;
 }
 
 Motor::~Motor(){
@@ -26,11 +26,11 @@ Motor::~Motor(){
 }
 
 void Motor::setPin1(int pin){
-    this->pin1 = pin;
+    this->pwm1 = pin;
 }
 
 void Motor::setPin2(int pin){
-    this->pin2 = pin;
+    this->pwm2 = pin;
 }
 
 void Motor::setDirection(bool direction){
@@ -48,6 +48,7 @@ void Motor::setPwm2(int pwm){
 //Put in a loop somewhere
 void Motor::run(){
     //TODO
+    /*
     struct itimerspec pwm1Timer; //For PWM1 Timer
     struct itimerspec pwm2Timer; //For PWM2 Timer
 
@@ -69,19 +70,20 @@ void Motor::run(){
 	 	        printf("Error starting timer");
 	 	        exit(0);
 	        }
-            */
+            
         }else{
 
         }
     }
+    */
    
 }
 
 void Motor::start(){
-    this->start = true;
+    this->isStart = true;
 }
 
 void Motor::stop(){
-    this->start = false;
+    this->isStart = false;
     //TODO
 }

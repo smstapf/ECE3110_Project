@@ -17,7 +17,7 @@
 #include <thread>
 #include <semaphore.h>
 #include "opencv2/opencv.hpp"
-#include <wiringPi.h>
+//#include <wiringPi.h>
 
 #define CONTROL1 1
 #define CONTROL2 4
@@ -50,7 +50,7 @@ class Motor{
         int control2;
         bool direction;
 
-        bool start;
+        bool isStart;
     public:
 
     Motor();
